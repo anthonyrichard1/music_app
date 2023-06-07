@@ -1,10 +1,13 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Runtime.Serialization;
 
 namespace App.Model
 {
+    [DataContract]
     public class Music : INotifyPropertyChanged, IEquatable<Music>
     {
+        [DataMember]
         public string Title
         {
             get => title;
@@ -17,6 +20,7 @@ namespace App.Model
         }
         private string title;
 
+        [DataMember]
         public string Artist
         {
             get => artist;

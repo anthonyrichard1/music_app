@@ -1,5 +1,7 @@
 ﻿using App.Model;
+using App.Persistance;
+using App.Stub;
 
-Music music = new("title", "artist");
+Manager manager = new(new Persistance(""));
 
-Console.WriteLine(music);
+foreach (var item in manager.MusicList) Console.WriteLine(item);

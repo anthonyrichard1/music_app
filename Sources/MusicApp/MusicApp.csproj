@@ -52,4 +52,10 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\Model\Model.csproj" />
+	  <ProjectReference Include="..\Persistance\Persistance.csproj" />
+	  <ProjectReference Include="..\Stub\Stub.csproj" />
+	</ItemGroup>
+
 </Project>

@@ -9,6 +9,15 @@
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
+
+            <DataTemplate x:Key="musicTemplate">
+                <Border>
+                    <HorizontalStackLayout>
+                        <Label Text="{Binding Title, StringFormat='{0} :'}"/>
+                        <Label Text="{Binding Artist, StringFormat=' {0}'}"/>
+                    </HorizontalStackLayout>
+                </Border>
+            </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
